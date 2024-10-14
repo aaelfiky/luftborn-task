@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Rubik';
+    src: local('Rubik'), url(./../../../public/fonts/Rubik/Rubik-Light.ttf) format('ttf');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+
+.button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.card-container {
+    position: relative;
+    font-family: 'Rubik';
+    width: 185px;
+    margin-top: 33px;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: space-between;
+    background-color: #1C204B;
+    border-radius: 15px;
+}
+
+.card-extension {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    padding: 35px 25px;
+    top: -35px;
+    width: 185px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.dots-container {
+    width: 35px;
+    text-align: center;
+}
+
+.product-details-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.product-details-subcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.product-category {
+    display: flex;
+    font-size: 18px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.product-price {
+    font-size: 39px;
+    font-weight: 300;
+    line-height: 46.22px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    text-align: left;
+    justify-content: end;
+}
+
+.product-details {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.product-details>span {
+    color: #BBC0FF !important;
+    white-space: nowrap;
+    max-width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+span.in-store {
+    align-content: end;
+    word-wrap: normal;
+    max-width: 45px;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .card-container {
+        width: 100%;
+        gap: 6px;
+    }
+
+    .card-extension {
+        width: 100%;
+        padding: 35px 0;
+    }
+
+    .product-details-subcontainer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    span.in-store {
+        display: none !important;
+    }
+}

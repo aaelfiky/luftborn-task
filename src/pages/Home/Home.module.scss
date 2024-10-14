@@ -1,0 +1,130 @@
+* {
+    color: white;
+}
+
+img.main-img {
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 4px 7px 8px rgba(0, 0, 0, 0.25);
+    margin-bottom: 4px;
+    transform: scale(0.8);
+}
+
+.main-container {
+    padding: 180px 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5em;
+}
+
+.report-container {
+    border-radius: 15px;
+    background-color: #1C204B;
+    max-width: 15%;
+    max-height: fit-content;
+}
+
+span.sub-header {
+    color: #BBC0FF;
+    text-align: left;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.main-title {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 47.4px;
+    letter-spacing: 12px;
+    text-align: left;
+}
+
+.report-extension {
+    background-color: #5747EA;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 16px 32px;
+}
+
+.report-extension>.info {
+    text-align: left;
+}
+
+.time-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: start;
+    padding: 2em;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.time-container>span {
+    color: #7078C9 !important;
+}
+
+.time-container>span.active {
+    color: #FFFFFF !important;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5em;
+    // width: 100%;
+    flex-wrap: wrap;
+}
+
+.loader-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .main-container {
+        flex-direction: column;
+        padding: 48px 24px;
+    }
+
+    img.main-img {
+        width: 64px;
+        transform: scale(1);
+    }
+
+    .report-container {
+        max-width: unset;
+        width: unset;
+    }
+
+    .report-extension {
+        flex-direction: row;
+        padding: 35px 32px;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .report-extension>.info {
+        display: flex;
+        gap: 3px;
+        flex-direction: column;
+    }
+
+    .main-title {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 28.44px;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+
+    .time-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px;
+    }
+}
